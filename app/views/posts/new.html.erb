@@ -1,2 +1,17 @@
 <h1>Posts#new</h1>
 <p>Find me in app/views/posts/new.html.erb</p>
+-------------------------------------------
+<h1> New Post </h1>
+<%= form for @post do |f| %> <!--what is this pulling from for 'f'?-->
+	<%= f.label :title %>:		<!--creates label for form box-->
+	<%= f.text_field :title %> <!--creates the empty box-->
+
+	<%= f.label :author %>
+	<%= f.text_field :author %>
+
+	<%= f.label :body %>
+	<%= f.text_field :body%>
+
+	<%= f.submit %>   <!--submit button?-->
+
+<% end %>
